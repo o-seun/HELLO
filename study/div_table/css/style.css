@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 15px; }
+
+.table-wrap {
+  width: 100%;
+  height: auto;
+  background-color: #29b8cc; }
+  .table-wrap .table {
+    display: table;
+    margin: 0 auto;
+    background-color: #9fc1fb; }
+  .table-wrap .row {
+    display: table-row; }
+  .table-wrap .cell {
+    display: table-cell;
+    border: 1px solid #a3a3a3;
+    vertical-align: middle; }
+  .table-wrap .col-01 {
+    padding: 15px;
+    text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

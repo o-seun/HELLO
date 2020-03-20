@@ -1,0 +1,358 @@
+* {
+  box-sizing: inherit;
+  transition-property: all;
+  transition-duration: .6s;
+  transition-timing-function: ease; }
+
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%; }
+
+body {
+  background: #dbfffe;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; }
+
+.buttons-1 .buttons {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  text-align: center;
+  width: 100%; }
+
+.buttons-1 .container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  text-align: center; }
+  @media (min-width: 600px) {
+    .buttons-1 .container {
+      flex-direction: row;
+      justify-content: space-between; } }
+
+.buttons-1 h1 {
+  color: black;
+  font-size: 1.25em;
+  font-weight: 900;
+  margin: 0 0 2em; }
+
+.buttons-1 p {
+  color: black;
+  font-size: 12px; }
+  .buttons-1 p a {
+    background: rgba(0, 0, 0, 0);
+    border-bottom: 1px solid;
+    color: black;
+    line-height: 1.4;
+    padding: .25em;
+    text-decoration: none; }
+    .buttons-1 p a:hover {
+      background: black;
+      color: #dbfffe; }
+
+.buttons-1 .btn {
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%; }
+  .buttons-1 .btn:hover {
+    text-decoration: none; }
+
+.buttons-1 .btn-1 {
+  background: #d3fffe;
+  font-weight: 100; }
+  .buttons-1 .btn-1 svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+  .buttons-1 .btn-1 rect {
+    fill: none;
+    stroke: #000;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear; }
+
+.buttons-1 .btn-1:hover {
+  background: rgba(219, 255, 254, 0);
+  font-weight: 900;
+  letter-spacing: 1px; }
+  .buttons-1 .btn-1:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1); }
+
+.buttons-1 .btn-2 {
+  letter-spacing: 0; }
+
+.buttons-1 .btn-2:hover,
+.buttons-1 .btn-2:active {
+  letter-spacing: 5px; }
+
+.buttons-1 .btn-2:after,
+.buttons-1 .btn-2:before {
+  backface-visibility: hidden;
+  border: 1px solid rgba(0, 0, 0, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0; }
+
+.buttons-1 .btn-2:hover:after,
+.buttons-1 .btn-2:hover:before {
+  backface-visibility: hidden;
+  border-color: black;
+  transition: width 350ms ease-in-out;
+  width: 70%; }
+
+.buttons-1 .btn-2:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%; }
+
+.buttons-1 .btn-3 {
+  background: #dbfffe;
+  border: 1px solid #dbfffe;
+  box-shadow: 0px 2px 0 #c2fffd, 2px 4px 6px #d1fffe;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: all 150ms linear; }
+
+.buttons-1 .btn-3:hover {
+  background: #dbfffe;
+  border: 1px solid black;
+  box-shadow: 1px 1px 2px black;
+  color: black;
+  text-decoration: none;
+  text-shadow: -1px -1px 0 #dbfffe;
+  transition: all 250ms linear; }
+
+.buttons-1 .btn-4 {
+  border: 1px solid;
+  overflow: hidden;
+  position: relative; }
+  .buttons-1 .btn-4 span {
+    z-index: 20; }
+  .buttons-1 .btn-4:after {
+    background: black;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: .2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10; }
+
+.buttons-1 .btn-4:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+.buttons-1 .btn-5 {
+  border: 0 solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1); }
+
+.buttons-1 .btn-5:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: rgba(255, 255, 255, 0);
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; }
+
+.buttons-2 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 60vw;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.buttons-2 .button {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid black;
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: .3s; }
+  .buttons-2 .button:after {
+    position: absolute;
+    transition: .3s;
+    content: '';
+    width: 0;
+    left: 50%;
+    bottom: 0;
+    height: 3px;
+    background: black; }
+  .buttons-2 .button:nth-of-type(2):after {
+    left: 0; }
+  .buttons-2 .button:nth-of-type(3):after {
+    right: 0;
+    left: auto; }
+  .buttons-2 .button:nth-of-type(4):after {
+    left: 0;
+    bottom: auto;
+    top: -3px;
+    width: 100%; }
+  .buttons-2 .button:nth-of-type(5):after {
+    height: 120%;
+    left: -10%;
+    transform: skewX(15deg);
+    z-index: -1; }
+  .buttons-2 .button:hover {
+    cursor: pointer; }
+    .buttons-2 .button:hover:after {
+      width: 100%;
+      left: 0; }
+    .buttons-2 .button:hover:nth-of-type(4):after {
+      top: calc(100% - 3px); }
+    .buttons-2 .button:hover:nth-of-type(5) {
+      color: #5bcaff; }
+    .buttons-2 .button:hover:nth-of-type(5):after {
+      left: -10%;
+      width: 120%; }
+    .buttons-2 .button:hover:nth-of-type(6) {
+      border-radius: 30px; }
+    .buttons-2 .button:hover:nth-of-type(6):after {
+      width: 0%; }
+    .buttons-2 .button:hover:nth-of-type(7) {
+      transform: scale(1.2); }
+    .buttons-2 .button:hover:nth-of-type(7):after {
+      width: 0%; }
+    .buttons-2 .button:hover:nth-of-type(8) {
+      box-shadow: inset 0px 0px 0px 3px black; }
+    .buttons-2 .button:hover:nth-of-type(8):after {
+      width: 0%; }
+    .buttons-2 .button:hover:nth-of-type(9) {
+      box-shadow: 0px 0px 0px 3px black; }
+    .buttons-2 .button:hover:nth-of-type(9):after {
+      width: 0%; }
+
+/*
+  https://developer.mozilla.org/en/docs/Web/CSS/box-shadow
+  box-shadow: [inset?] [top] [left] [blur] [size] [color];
+
+  Tips:
+    - We're setting all the blurs to 0 since we want a solid fill.
+    - Add the inset keyword so the box-shadow is on the inside of the element
+    - Animating the inset shadow on hover looks like the element is filling in from whatever side you specify ([top] and [left] accept negative values to become [bottom] and [right])
+    - Multiple shadows can be stacked
+    - If you're animating multiple shadows, be sure to keep the same number of shadows so the animation is smooth. Otherwise, you'll get something choppy.
+*/
+.buttons-3 {
+  width: 900px;
+  margin: 0 auto; }
+
+.buttons-3 .fill:hover,
+.buttons-3 .fill:focus {
+  box-shadow: inset 0 0 0 2em var(--hover); }
+
+.buttons-3 .pulse:hover,
+.buttons-3 .pulse:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0); }
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover); } }
+.buttons-3 .close:hover,
+.buttons-3 .close:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.5em 0 0 0 var(--hover); }
+
+.buttons-3 .raise:hover,
+.buttons-3 .raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em); }
+
+.buttons-3 .up:hover,
+.buttons-3 .up:focus {
+  box-shadow: inset 0 -3.25em 0 0 var(--hover); }
+
+.buttons-3 .slide:hover,
+.buttons-3 .slide:focus {
+  box-shadow: inset 6.5em 0 0 0 var(--hover); }
+
+.buttons-3 .offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color); }
+  .buttons-3 .offset:hover, .buttons-3 .offset:focus {
+    box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover); }
+
+.fill {
+  --color: #a972cb;
+  --hover: #cb72aa; }
+
+.pulse {
+  --color: #ef6eae;
+  --hover: #ef8f6e; }
+
+.close {
+  --color: #ff7f82;
+  --hover: #ffdc7f; }
+
+.raise {
+  --color: #ffa260;
+  --hover: #e5ff60; }
+
+.up {
+  --color: #e4cb58;
+  --hover: #94e458; }
+
+.slide {
+  --color: #8fc866;
+  --hover: #66c887; }
+
+.offset {
+  --color: #19bc8b;
+  --hover: #1973bc; }
+
+.buttons-3 button {
+  color: var(--color);
+  transition: 0.25s; }
+  .buttons-3 button:hover, .buttons-3 button:focus {
+    border-color: var(--hover);
+    color: #fff; }
+
+.buttons-3 button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em; }
+
+.buttons-3 h1 {
+  font-weight: 400; }
+
+.buttons-3 code {
+  color: #e4cb58;
+  font: inherit; }
+
+/*# sourceMappingURL=button-util.css.map */
