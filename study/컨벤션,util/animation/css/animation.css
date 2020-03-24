@@ -1,0 +1,167 @@
+@keyframes showTopText {
+  0% {
+    transform: translate3d(0, 100%, 0); }
+  100% {
+    transform: translate3d(0, 0, 0); } }
+@keyframes showBottomText {
+  0% {
+    transform: translate3d(0, -100%, 0); }
+  100% {
+    transform: translate3d(0, 0, 0); } }
+@keyframes showrightText {
+  0% {
+    transform: translate3d(200%, 40%, 0); }
+  100% {
+    transform: translate3d(0, 40%, 0); } }
+.animated-title-01 {
+  color: #ffffff;
+  height: 45rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center; }
+  .animated-title-01 > div {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    text-align: center; }
+  .animated-title-01 > div div {
+    font-size: 2.6rem;
+    font-weight: 400;
+    position: absolute;
+    width: 100%;
+    text-align: center; }
+  .animated-title-01 > div.text-top div span:first-child {
+    font-size: 3.4rem;
+    font-weight: 500; }
+  .animated-title-01 > div div span {
+    display: block; }
+  .animated-title-01 > div.text-top div {
+    animation: showTopText 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, 100%); }
+  .animated-title-01 > div.text-bottom {
+    bottom: 0; }
+  .animated-title-01 > div.text-bottom div {
+    animation: showBottomText 0.5s;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -100%); }
+
+.animated-title-02 {
+  color: #ffffff;
+  height: 45rem;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center; }
+  .animated-title-02 > div {
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    text-align: center; }
+  .animated-title-02 > div.text-top {
+    width: 100%;
+    top: 50px; }
+  .animated-title-02 > div.text-top h2 {
+    font-size: 3rem;
+    animation: showTopText 0.8s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(0, -100%); }
+  .animated-title-02 > div.text-top .text-top-01 {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 500;
+    animation: showTopText 0.8s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;
+    top: 0;
+    bottom: 0;
+    transform: translate(0, -210%); }
+  .animated-title-02 > div.text-top .text-top-02 {
+    display: inline-block;
+    font-size: 2.5rem;
+    font-weight: 500;
+    animation: showTopText 0.8s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    top: 0;
+    bottom: 0;
+    transform: translate(0, -230%); }
+  .animated-title-02 > div.text-bottom {
+    bottom: 0; }
+  .animated-title-02 > div.text-bottom button {
+    animation: showBottomText 0.8s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(0, -150%); }
+
+.animated-title-03 {
+  color: #ffffff;
+  height: 45rem;
+  position: absolute;
+  top: 70%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  text-align: center; }
+  .animated-title-03 > div {
+    height: 50%;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-align: center; }
+  .animated-title-03 > div.text-top {
+    width: 100%;
+    top: -10%; }
+  .animated-title-03 > div.text-top h2 {
+    font-size: 3rem;
+    animation: showrightText 0.8s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    transform: translate(200%, 0);
+    text-align: right; }
+  .animated-title-03 > div.text-right h3:nth-child(1) {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 500;
+    animation: showrightText 0.8s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    top: 0;
+    bottom: 0;
+    transform: translate(200%, 0); }
+  .animated-title-03 > div.text-right h3:nth-child(2) {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 500;
+    animation: showrightText 0.8s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    top: 0;
+    bottom: 0;
+    transform: translate(200%, 0); }
+  .animated-title-03 > div.text-bottom {
+    bottom: 0; }
+  .animated-title-03 > div.text-bottom .btn-service-r {
+    animation: showrightText 0.8s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+    top: 0;
+    transform: translate(200%, 0);
+    text-align: right; }
+
+/*# sourceMappingURL=animation.css.map */

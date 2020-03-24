@@ -1,0 +1,66 @@
+@keyframes bounce {
+   0%, 20%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
+}
+
+.bounce {
+  animation-name: bounce;
+}
+
+@keyframes pulse {
+  0% {transform: scale(1.0);}
+  50% {transform: scale(1.2);}
+  100% {transform: scale(1.0);}
+}
+
+.pulse {
+  animation-name: pulse;
+}
+
+@keyframes rubberband {
+  0% {transform: scale(1.0);}
+  20% {transform: scaleX(1.25) scaleY(0.75);}
+  40% {transform: scaleX(0.75) scaleY(1.25);}
+  60% {transform: scaleX(1.15) scaleY(0.85);}
+  100% {transform: scale(1.0);}
+}
+
+.rubberband {
+  animation-name: rubberband;
+}
+
+@keyframes shake {
+  0%, 100% {transform: translateX(0px);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {transform: translateX(10px);}
+}
+.shake {
+  animation-name: shake;
+}
+
+@keyframes hinge {
+  0% {transform: rotate(0);transform-origin: top left; animation-timing-function: ease-in-out;}
+  20% {transform: rotate(80deg);transform-origin: top left; animation-timing-function: ease-in-out;}
+  40% {transform: rotate(60deg);transform-origin: top left; animation-timing-function: ease-in-out;}
+  60% {transform: rotate(80deg);transform-origin: top left; animation-timing-function: ease-in-out;}
+  80% {transform: rotate(60deg) translateY(0); transform-origin: top left;}
+  100% {transform: translateY(700px); animation-timing-function: ease-in-out;}
+}
+
+.hinge {
+      margin: 10px;
+      animation-name: hinge;
+    }
+
+@keyframes flip {
+  0% {transform: translateZ(0) rotateY(0) scale(1) perspective(400px) ;animation-timing-function: ease-out;}
+  30% {transform: translateZ(150px) rotateY(170deg) scale(1) perspective(400px) ; animation-timing-function: ease-out;}
+  50% {transform: translateZ(150px) rotateY(190deg) scale(1) perspective(400px) ;animation-timing-function: ease-in;}
+  80% {transform: translateZ(0) rotateY(360deg) scale(0.90) perspective(400px); animation-timing-function: ease-in;}
+  100% {transform: translateZ(0) rotateY(360deg) scale(1) perspective(400px) ; animation-timing-function: ease-in;}
+}
+
+.flip {
+  animation-name: flip;
+}
