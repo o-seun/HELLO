@@ -16,16 +16,13 @@ body {
     width: 180px;
     height: 50px;
     border: 1px solid #f2f2f2;
-    background-color: antiquewhite;
+    background-color: cornflowerblue;
     text-align: center;
     line-height: 50px;
     animation-duration: 2s;
     animation-iteration-count: infinite;
   }
 }
-
-
-
 
 ////////////
 // bounce
@@ -219,6 +216,64 @@ body {
 }
 
 ////////////
+// no-namex
+////////////
+
+@keyframes no-nameX {
+  0% {transform: rotateX(80deg) scale(1)}
+  16.6% {transform: rotateX(-75deg) scale(1)}
+  33% {transform: rotateX(70deg) scale(0.9)}
+  50% {transform: rotateX(-65deg) scale(1)}
+  68% {transform: rotateX(50deg) scale(0.9)}
+  80% {transform: rotateX(-30deg) scale(0.9)}
+  100% {transform: rotateX(0deg) scale(1)}
+}
+
+.no-namex-h:hover {
+  animation-name: no-nameX;
+}
+
+////////////
+// no-namey
+////////////
+
+@keyframes no-nameY {
+  0% {transform: rotateY(80deg)}
+  16.6% {transform: rotateY(-75deg)}
+  33% {transform: rotateY(70deg)}
+  50% {transform: rotateY(-65deg)}
+  68% {transform: rotateY(50deg)}
+  80% {transform: rotateY(-30deg)}
+  100% {transform: rotateY(0deg)}
+}
+
+.no-namey-h:hover {
+  animation-name: no-nameY;
+}
+
+////////////
+// right-move
+////////////
+
+@keyframes borderRadius {
+  0% {
+    border-radius: 0%;
+  }
+  50% {
+    transform: rotateY(-50deg);
+    border-radius: 50%;
+  }
+  100% {
+    transform: rotateY(0deg);
+    border-radius: 0%;
+  }
+}
+
+.radius-h:hover {
+  animation-name: borderRadius;
+}
+
+////////////
 // flip-box
 ////////////
 
@@ -245,8 +300,8 @@ body {
       animation-duration: 24s;
       animation-iteration-count: infinite;
     }
-    .bounce {
-      animation-name: bounce;
+    .no-name {
+      animation-name: no-name;
       animation-delay: 22s;
       width: auto;
       background-color: #75c966;
@@ -283,7 +338,7 @@ body {
     .zflip {
       animation-name: zflip;
       animation-delay: 2s;
-      animation-direction: alternate;
+      animation-fill-mode: both;
       width: auto;
       background-color: #9866c9;
       color: white;
