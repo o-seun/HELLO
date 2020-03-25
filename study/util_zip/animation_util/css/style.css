@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none; }
+
+.text-box {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px; }
+  .text-box div {
+    display: inline-block;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #f2f2f2;
+    background-color: antiquewhite;
+    text-align: center;
+    line-height: 50px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; }
+
+@keyframes bounce {
+  0%,
+  100%,
+  20%,
+  80% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-30px); }
+  60% {
+    transform: translateY(-15px); } }
+.bounce:hover {
+  animation-name: bounce; }
+
+.bounce-h:hover {
+  animation-name: bounce; }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
+.pulse-h:hover {
+  animation-name: pulse; }
+
+@keyframes rubberband {
+  0% {
+    transform: scale(1); }
+  20% {
+    transform: scaleX(1.25) scaleY(0.75); }
+  40% {
+    transform: scaleX(0.75) scaleY(1.25); }
+  60% {
+    transform: scaleX(1.15) scaleY(0.85); }
+  100% {
+    transform: scale(1); } }
+.rubberband-h:hover {
+  animation-name: rubberband; }
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0px); }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px); }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px); } }
+.shake-h:hover {
+  animation-name: shake; }
+
+@keyframes hinge {
+  0% {
+    transform: rotate(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out; }
+  20% {
+    transform: rotate(80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out; }
+  40% {
+    transform: rotate(60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out; }
+  60% {
+    transform: rotate(80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out; }
+  80% {
+    transform: rotate(60deg) translateY(0);
+    transform-origin: top left; }
+  100% {
+    transform: translateY(700px);
+    animation-timing-function: ease-in-out; } }
+.hinge-h:hover {
+  margin: 10px;
+  animation-name: hinge; }
+
+@keyframes zflip {
+  0% {
+    transform: translateZ(0) rotateY(0) scale(1) perspective(400px);
+    animation-timing-function: ease-out; }
+  30% {
+    transform: translateZ(150px) rotateY(170deg) scale(1) perspective(400px);
+    animation-timing-function: ease-out; }
+  50% {
+    transform: translateZ(150px) rotateY(190deg) scale(1) perspective(400px);
+    animation-timing-function: ease-in; }
+  80% {
+    transform: translateZ(0) rotateY(360deg) scale(0.9) perspective(400px);
+    animation-timing-function: ease-in; }
+  100% {
+    transform: translateZ(0) rotateY(360deg) scale(1) perspective(400px);
+    animation-timing-function: ease-in; } }
+.zflip-h:hover {
+  animation-name: zflip; }
+
+.flip-text-box {
+  width: 300px;
+  height: auto;
+  margin: 0 auto;
+  font-size: 30px;
+  text-align: center;
+  color: #ff0000;
+  font-weight: bold;
+  overflow: hidden; }
+  .flip-text-box .flip {
+    width: 100%;
+    height: 40px;
+    overflow: hidden; }
+    .flip-text-box .flip .animation {
+      animation-duration: 2s; }
+    .flip-text-box .flip > div:first-child {
+      margin: 0 auto;
+      animation-name: flip-box;
+      animation-duration: 24s;
+      animation-iteration-count: infinite; }
+    .flip-text-box .flip .bounce {
+      animation-name: bounce;
+      animation-delay: 22s;
+      width: auto;
+      background-color: #75c966;
+      color: white; }
+    .flip-text-box .flip .pulse {
+      animation-name: pulse;
+      animation-delay: 18s;
+      width: auto;
+      background-color: #c9c266;
+      color: white; }
+    .flip-text-box .flip .rubberband {
+      animation-name: rubberband;
+      animation-delay: 14s;
+      width: auto;
+      background-color: #c97b66;
+      color: white; }
+    .flip-text-box .flip .shake {
+      animation-name: shake;
+      animation-delay: 10s;
+      width: auto;
+      background-color: #667fc9;
+      color: white; }
+    .flip-text-box .flip .hinge {
+      animation-name: hinge;
+      animation-delay: 6s;
+      width: auto;
+      background-color: #c966b9;
+      color: white; }
+    .flip-text-box .flip .zflip {
+      animation-name: zflip;
+      animation-delay: 2s;
+      animation-direction: alternate;
+      width: auto;
+      background-color: #9866c9;
+      color: white; }
+
+@keyframes flip-box {
+  0% {
+    margin-top: -240px; }
+  16.6% {
+    margin-top: -200px; }
+  33.6% {
+    margin-top: -160px; }
+  50.2% {
+    margin-top: -120px; }
+  66.8% {
+    margin-top: -80px; }
+  83.4% {
+    margin-top: -40px; }
+  99.9% {
+    margin-top: 0px; }
+  100% {
+    margin-top: -200px; } }
+
+/*# sourceMappingURL=style.css.map */
