@@ -214,6 +214,16 @@
     margin-top: 0px; }
   100% {
     margin-top: -200px; } }
+ul li {
+  background: aqua;
+  width: 500px;
+  height: 100px; }
+
+li:hover {
+  animation: bounce;
+  animation-delay: 2s;
+  animation-duration: 2; }
+
 body {
   margin: 0;
   padding: 0;
