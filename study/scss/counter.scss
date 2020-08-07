@@ -1,0 +1,233 @@
+// @keyframes counter {
+//   @for $i from 1 through 100 {
+//     $r: $i/9;
+//     #{$r*100%} {
+//       transform: translateY($r*-100%);
+//     }
+//     #{$r*100%+0} {
+//       transform: translateY($r*-100%);
+//     }
+//   }
+// }
+
+// @keyframes counter02 {
+//   @for $i from 0 through 9 {
+//     $r: $i/10;
+//     #{$r*100%} {
+//       transform: translateY($r-100%);
+//       content:"0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9"
+//     }
+//     #{$r*100%} {
+//       transform: translateY($r*-100%);
+//       content:"0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9"
+//     }
+//   }
+// }
+
+// @keyframes counter {
+//   @for $i from 0 through 9 {
+//    $r: $i/10;
+//    #{$r*100%} { transform: translateY($i*$font-size*-1); }
+//    #{$r*100% + 9.999%} { transform: translateY($i*$font-size*-1); }
+//  }
+// }
+
+
+
+$font-size: 4rem;
+
+@mixin animation ($name, $iteration-count, $fill-mode, $timing-function) {
+  animation-name: $name;
+  // animation-delay: $delay;
+  // animation-duration: $duration;
+  animation-iteration-count: $iteration-count;
+  animation-fill-mode: $fill-mode;
+  animation-timing-function: $timing-function;
+}
+
+@mixin keyframe ($counter) {
+  @keyframes #{$counter} {
+    @content;
+  }
+}
+
+@include keyframe (counter) {
+  @for $i from 0 through 9 {
+   $r: $i/10;
+   #{$r*100%} { transform: translateY($i*$font-size*-1); }
+   #{$r*100% + 9.999%} { transform: translateY($i*$font-size*-1); }
+  }
+}
+
+@mixin keyframe ($counter02) {
+  @keyframes #{$counter02} {
+    @content;
+  }
+}
+
+@include keyframe (counter02) {
+  @for $i from 0 through 9 {
+    $r: $i/10;
+    #{$r*100%} {
+      transform: translateY($i*$font-size*-1);
+      content:"0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9"
+    }
+    #{$r*100% + 9.999%} {
+      transform: translateY($i*$font-size*-1);
+      content:"0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9"
+    }
+  }
+}
+
+// @mixin delay ($delay) {
+//   animation-delay: $delay;
+// }
+//
+// @include keyframe (delay) {
+//   @keyframes #{$delay} {
+//     @content;
+//   }
+// }
+//
+// @include keyframe (delay) {
+//   @for $i from 1 through 9 {
+//     .counter-0#{$i} {
+//       animation-delay: .2*$i#{s}
+//     }
+//   }
+// }
+
+// @for $i from 1 through 9 {
+//   .counter-0#{$i} {
+//     animation-delay: 3*$i;
+//   }
+// }
+
+#counter {
+  // visibility: hidden;
+  height: 5rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  left: 0;
+  font-size: 4rem;
+  line-height: 5rem;
+  text-align: center;
+  margin: 0 3rem;
+  display: block;
+  color: #57bfcf;
+  font-weight: bold;
+
+  @for $i from 2 through 9 {
+    .counter-0#{$i} {
+      &::before {
+        animation-delay: #{0*$i}s;
+        animation-duration: #{0.02*$i}s;
+        @include animation (counter, 9, backwards, linear);
+      }
+    }
+  }
+
+  .counter-01 {
+    white-space: pre;
+    &:before {
+      display: block;
+      content: "1";
+      position: absolute;
+      left:0;
+
+      animation-duration: .2s;
+      @include animation (counter02, 9, backwards, linear);
+
+    }
+  }
+  .counter-02 {
+    white-space: pre;
+    &:before {
+      display:block;
+      content: "0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9";
+      position: absolute;
+      left:22.6rem;
+
+      // @include animation (counter, .3s, 1, backwards, linear);
+    }
+  }
+  .counter-03 {
+    white-space: pre;
+    &:before {
+      display:block;
+      content: "0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9";
+      position: absolute;
+      left:20.1rem;
+
+      // @include animation (counter, .3s, 1, backwards, linear);
+    }
+  }
+  .counter-04 {
+    white-space: pre;
+    &:before {
+      display:block;
+      content: ",0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9";
+      position: absolute;
+      left:16.3rem;
+
+      // @include animation (counter, .3s, 1, backwards, linear);
+    }
+  }
+  .counter-05 {
+    white-space: pre;
+    &:before {
+      display:block;
+      content: "0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9";
+      position: absolute;
+      left:13.8rem;
+
+      // @include animation (counter, .3s, 1, backwards, linear);
+    }
+  }
+  .counter-06 {
+    white-space: pre;
+    &:before {
+      display:block;
+      content: "0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9";
+      position: absolute;
+      left:11.3rem;
+
+      // @include animation (counter, .3s, 1, backwards, linear);
+    }
+  }
+  .counter-07 {
+    white-space: pre;
+    &:before {
+      display:block;
+      content: ",0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9";
+      position: absolute;
+      left:7.5rem;
+
+      // @include animation (counter, .3s, 1, backwards, linear);
+    }
+  }
+  .counter-08 {
+    white-space: pre;
+    &:before {
+      display:block;
+      content: "0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9";
+      position: absolute;
+      left:5rem;
+
+      // @include animation (counter, .3s, 1, backwards, linear);
+    }
+  }
+  .counter-09 {
+    white-space: pre;
+    width: 1rem;
+    &:before {
+      display:block;
+      content: "0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9";
+      position: absolute;
+      left:2.5rem;
+
+      // @include animation (counter, .3s, 1, backwards, linear);
+    }
+  }
+}
