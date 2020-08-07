@@ -1,0 +1,21 @@
+input[type="radio"] {
+  display: none;
+}
+
+#first:checked ~ .section-one,
+#second:checked ~ .section-two,
+#third:checked ~ .section-three {
+  display: block;
+}
+
+#first:checked ~ div li:nth-child(1) {
+  border-bottom: .5rem solid #b3f198;
+}
+
+#second:checked ~ div li:nth-child(2) {
+  border-bottom: .5rem solid #98f1e4;
+}
+
+#third:checked ~ div li:nth-child(3) {
+  border-bottom: .5rem solid #98b3f1;
+}
