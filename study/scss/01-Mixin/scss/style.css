@@ -200,8 +200,6 @@ div {
   display: flex;
   align-items: center;
   justify-content: center; }
-  #counter span {
-    color: #57bfcf; }
 
 @keyframes counter {
   0% {
@@ -316,7 +314,7 @@ div {
   text-align: center;
   margin: 0 3rem;
   display: block;
-  color: #57bfcf;
+  color: #638aff;
   font-weight: bold; }
   #counter .counter-02::before {
     animation-delay: 0s;
