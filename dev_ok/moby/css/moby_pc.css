@@ -1,0 +1,98 @@
+* {
+    margin:0;
+    padding:0;
+    font-size:14px;
+    font-family:"나눔스퀘어라운드";
+    list-style:none;
+    text-decoration:none;
+}
+
+.index_pc {
+    width:100%;
+    height:1005px;
+    background-color:#0067e7;
+}
+
+.link_box {
+    width:100%;
+    height:100px;
+    position:relative;
+}
+
+.link_box img {
+    width:100px;
+    margin-top:20px;
+    margin-left:50px;
+    vertical-align:top;
+}
+
+.link_box ul {
+    float:left;
+    position:absolute;
+    right:0;
+    top:50px;
+}
+
+.link_box ul li {
+    float:left;
+    margin-right:200px;
+    line-height:0px;
+}
+
+.link_box ul li:nth-child(2) {
+    margin-right:100px;
+}
+
+.link_box ul li a {
+    color:white;
+    font-weight:bold;
+    font-size:30px;
+}
+
+.youtube_box {
+    width:1000px;
+    height:500px;
+    margin:0 auto;
+    
+}
+
+.youtube_box .main_text {
+    text-align:center;
+    margin-top:120px;
+    line-height:140px;
+    font-size:100px;
+    color:white;
+}
+
+.youtube_box .sub_text {
+    text-align:center;
+    font-size:40px;
+    color:white;
+    margin-top:100px;
+    font-weight:bold;
+}
+
+.youtube_box .sub_text2 {
+    text-align:center;
+    margin-top:30px;
+}
+
+.youtube_box .sub_text2 a {
+    font-size:25px;
+    color:white;
+    font-weight:bold;
+}
+
+.youtube_box .sub_text2 a:nth-child(1) {
+    margin-right:100px;
+}
+
+.made {
+    position:absolute;
+    width:150px;
+    bottom:-200px;
+    font-size:20px;
+    color:white;
+    left:50%;
+    margin-left:-75px;
+}

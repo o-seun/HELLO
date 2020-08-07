@@ -1,0 +1,330 @@
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration:none;
+    font-size:14px;
+    font-family:"나눔고딕";
+    color:black;
+}
+
+
+/*PC인덱스*/
+#pc_index { 
+    width:100%;
+}
+
+
+
+/*헤드 박스*/
+
+.opacity_box {
+    position:absolute;
+    top:0px;
+    background-color:black;
+    width:100%;
+    height:50px;
+    opacity:0.5;
+}
+
+
+.head_box {
+    position:relative;
+    width:100%;
+    height:50px;
+    /*background-color:#a79068;*/
+    z-index:5;
+}
+
+.head_box img {
+    position:absolute;
+    left:30px;
+    width:120px;
+    height:50px;
+}
+
+    /*헤드 메뉴*/
+
+
+
+.h_menu {
+    position:absolute;
+    top:0px;
+    left:350px;
+    width:800px;
+    height:50px;
+}
+
+.main_menu ul li {
+    width:200px;
+    height:50px;
+    text-align:center;
+    float:left;
+    line-height:50px;
+    transition:all 1s;
+}
+
+/*.main_menu > ul > li:hover {
+    background:white;
+    transition:all 1s;
+}*/
+
+.main_menu ul li a {
+    font-size:18px;
+    font-weight:bold;
+    color:white;
+}
+
+/*.main_menu > ul > li:hover a {
+    color:black;
+}*/
+
+
+
+.main_menu > ul > li:nth-child(1) img:nth-child(1) {
+    width:50px;
+    left:5px;
+    top:-3px;
+}
+
+.main_menu > ul > li:nth-child(1) img:nth-child(3) {
+    width:50px;
+    left:140px;
+    top:-3px;
+}
+
+.main_menu > ul > li:nth-child(2) img:nth-child(1) {
+    width:50px;
+    left:195px;
+    top:-2px;
+}
+
+.main_menu > ul > li:nth-child(2) img:nth-child(3) {
+    width:50px;
+    left:355px;
+    top:-1px;
+}
+
+.main_menu > ul > li:nth-child(3) img:nth-child(1) {
+    width:50px;
+    left:410px;
+    top:0px;
+}
+
+.main_menu > ul > li:nth-child(3) img:nth-child(3) {
+    width:50px;
+    left:535px;
+    top:-2px;
+}
+
+.main_menu > ul > li:nth-child(4) img:nth-child(1) {
+    width:50px;
+    left:610px;
+    top:-2px;
+}
+
+.main_menu > ul > li:nth-child(4) img:nth-child(3) {
+    width:50px;
+    left:735px;
+    top:-2px;
+}
+
+
+
+
+.wolf img {
+    position:absolute;
+    top:25px;
+    left:130px;
+    width:50px;
+    height:25px;
+}
+
+.sub_menu {
+    position:absolute;
+    top:50px;
+    left:350px;
+    display:none;
+    height:305px;
+    /*opacity:0.8;*/
+}
+
+.sub_menu ul {
+    float:left;
+    width:200px;
+    height:305px;
+    text-align:center;
+    background-color:black;
+    opacity:0.5;
+}
+
+.sub_menu ul li {
+    padding:10px 0;
+    color:white;
+}
+
+.sub_menu ul li:hover {
+    background:white;
+    
+}
+
+.sub_menu ul li a {
+    color:white;
+    font-weight:bold;
+    font-size:12px;
+}
+
+.sub_menu ul li:hover a {
+    color:black;
+    font-weight:900;
+}
+
+
+/*슬라이드 박스*/
+
+.slide_box {
+    position:absolute;
+    top:0px;
+    width:100%;
+    height:360px;
+}
+
+.slide_box img {
+    width:100%;
+    height:100%;
+}
+
+
+/*컨텐츠 박스*/
+
+.content_box {
+    width:1200px;
+    margin:0 auto;
+    margin-top:350px;
+}
+
+.notice_box {
+    width:400px;
+    height:250px;
+    float:left;
+}
+
+.notice_box h4 a {
+    display:inline-block;
+    font-size:18px;
+    margin-top:15px;
+    margin-left:20px;
+    margin-bottom:5px;
+}
+
+.notice_box hr {
+    width:350px;
+    margin-left:20px;
+}
+
+.notice_box p {
+    margin-left:20px;
+    margin-bottom:10px;
+}
+
+.notice_box p:nth-child(3) {
+    margin-top:20px;
+}
+
+.board_box {
+    width:400px;
+    height:250px;
+    float:left;
+}
+
+.board_box h4 a {
+    display:inline-block;
+    font-size:18px;
+    margin-top:15px;
+    margin-left:20px;
+    margin-bottom:5px;
+}
+
+.board_box hr {
+    width:350px;
+    margin-left:20px;
+}
+
+.board_box p {
+    margin-left:20px;
+    margin-bottom:10px;
+}
+
+.board_box p:nth-child(3) {
+    margin-top:20px;
+}
+
+.deve_box {
+    width:400px;
+    height:250px;
+    float:left;
+}
+
+.deve_box h4 a {
+    display:inline-block;
+    font-size:18px;
+    margin-top:15px;
+    margin-left:20px;
+    margin-bottom:5px;
+}
+
+.deve_box hr {
+    width:350px;
+    margin-left:20px;
+}
+
+.deve_box p {
+    margin-left:20px;
+    margin-bottom:10px;
+}
+
+.deve_box p:nth-child(3) {
+    margin-top:20px;
+}
+
+.deve_box img {
+    width:300px;
+    margin-left:30px;
+}
+
+
+/*푸터 박스*/
+
+.footer_box {
+    margin-top:600px;
+    width:100%;
+    height:50px;
+    background-color:#a79068;
+}
+
+.f_logo {
+    float:left;
+}
+
+.f_logo img {
+    margin-top:5px;
+    width:140px;
+    margin-left:30px;
+    margin-top:-20px;
+}
+
+.copyright {
+    width:600px;
+    margin:0 auto;
+}
+
+.copyright p {
+    font-size:20px;
+    text-align:center;
+    padding-top:10px;
+}
+
+.copyright img {
+    margin-top:-50px;
+    margin-left:800px;
+}
