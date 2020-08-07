@@ -201,7 +201,7 @@ div {
   align-items: center;
   justify-content: center; }
   #counter span {
-    color: black; }
+    color: #57bfcf; }
 
 @keyframes counter {
   0% {
