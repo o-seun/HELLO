@@ -1,0 +1,52 @@
+section {
+  display: block;
+  width: 100%;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+  }
+  ul {
+    width: 40rem;
+  }
+  .list {
+    max-width: 41rem;
+    .width-20 {
+      display: block;
+      width: 20%;
+      margin: 1rem;
+    }
+    .box {
+      width: 100%;
+      .tab-title {
+        display: flex;
+        align-items: center;
+        // justify-content: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+        border-top: .1rem solid #8fff78;
+        border-bottom: .1rem solid #8fff78;
+        margin: 1rem 0;
+      }
+      .collapse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .5s;
+        .explain {
+          font-size: 1.8rem;
+          width: 100%;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+@keyframes slidedown {
+  0% {
+
+  }
+}

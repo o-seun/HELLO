@@ -1,0 +1,21 @@
+.collapse {
+  background: #f5f5f5;
+  // border-bottom: 1px solid #efebef;
+  height: 0;
+  overflow: hidden;
+  transition:all 10ms linear;
+}
+
+// .collapse.open {
+//   padding: 5rem 2rem;
+//   height: auto;
+//   word-break: keep-all;
+// }
+
+.accordion-open {
+  .collapse {
+    padding: 5rem 2rem;
+    height: auto;
+    word-break: keep-all;
+  }
+}

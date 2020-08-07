@@ -1,0 +1,250 @@
+/* @import "https://fonts.googleapis.com/earlyaccess/notosanskr.css";
+@import "https://fonts.googleapis.com/css?family=Montserrat+Subrayada:400,700"; */
+body,
+html {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0 auto;
+  background: #ffffff;
+  font-size: 10px;
+  font-weight: 100;
+  zoom: 1; }
+
+* {
+  font-family: 'Noto Sans KR', 'Noto', 'Nanum Barun Gothic', 'Malgun Gothic', 'Noto Sans', 'sans-serif', 'Apple SD Neo Gothic', 'Raleway';
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  letter-spacing: -0.05rem;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  /* width: auto; */ }
+
+a:hover {
+  text-decoration: none; }
+
+a:focus,
+button:focus,
+input:focus,
+label:focus,
+select:focus,
+textarea:focus {
+  outline: none; }
+
+label,
+button,
+select {
+  cursor: pointer; }
+
+dd,
+dl,
+ol,
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+p {
+  margin: 0; }
+
+button,
+input {
+  padding: 0;
+  border: 0; }
+
+input[type=email],
+input[type=password],
+input[type=text],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  resize: none;
+  font-size: initial; }
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type=text]::-ms-clear {
+  display: none; }
+
+*:focus {
+  outline: none; }
+
+::-webkit-input-placeholder {
+  color: #999999;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: #999999;
+  opacity: 1; }
+
+::-ms-input-placeholder {
+  color: #999999;
+  opacity: 1; }
+
+::placeholder {
+  color: #999999;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  color: #999999; }
+
+::-ms-input-placeholder {
+  color: #999999; }
+
+/*
+  layout
+*/
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto; }
+  #app #gnb-mobile {
+    display: none; }
+
+header {
+  transition: all 350ms;
+  background: #ffffff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  border-bottom: .1rem solid #efebef; }
+
+header.main {
+  border-bottom: 0;
+  background: transparent; }
+  header.main:hover, header.main.scrolled {
+    background: #ffffff;
+    border-bottom: .1rem solid #efebef;
+    transition: border-color 0s ease; }
+    header.main:hover a, header.main.scrolled a {
+      color: #333333 !important; }
+    header.main:hover .navbar-nav .user, header.main.scrolled .navbar-nav .user {
+      color: #333333 !important; }
+
+main {
+  display: flex;
+  width: 100%;
+  height: auto;
+  min-width: 32rem;
+  max-width: 204rem;
+  margin: 0;
+  z-index: 1; }
+
+main .content {
+  width: 100%;
+  padding: 2rem; }
+
+footer {
+  z-index: auto;
+  position: relative;
+  width: 100%;
+  padding: .0 .5rem 1rem 1rem;
+  bottom: 0;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0;
+  color: #666666;
+  border-top: .1rem solid #efebef;
+  background: #ffffff; }
+  footer .inner {
+    max-width: 204rem;
+    margin: 0 auto;
+    position: relative; }
+  footer .address,
+  footer .info {
+    padding: .2rem 0;
+    font-size: 1.3rem; }
+  footer .copy {
+    font-size: 1.2rem;
+    padding-top: 1rem; }
+
+@media (max-width: 1024px) {
+  body,
+  html {
+    font-size: 9px !important; } }
+@media (max-width: 768px) {
+  body,
+  html {
+    font-size: 9px !important; } }
+@media (max-width: 600px) {
+  body,
+  html {
+    font-size: 8px !important; } }
+@media (max-width: 375px) {
+  body,
+  html {
+    font-size: 7px !important; } }
+@media (max-width: 320px) {
+  body,
+  html {
+    font-size: 6px !important; } }
+.collapse {
+  background: #f5f5f5;
+  height: 0;
+  overflow: hidden;
+  transition: all 10ms linear; }
+
+.accordion-open .collapse {
+  padding: 5rem 2rem;
+  height: auto;
+  word-break: keep-all; }
+
+section {
+  display: block;
+  width: 100%; }
+  section > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh; }
+  section ul {
+    width: 40rem; }
+  section .list {
+    max-width: 41rem; }
+    section .list .width-20 {
+      display: block;
+      width: 20%;
+      margin: 1rem; }
+    section .list .box {
+      width: 100%; }
+      section .list .box .tab-title {
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+        border-top: .1rem solid #8fff78;
+        border-bottom: .1rem solid #8fff78;
+        margin: 1rem 0; }
+      section .list .box .collapse {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .5s; }
+        section .list .box .collapse .explain {
+          font-size: 1.8rem;
+          width: 100%;
+          font-weight: 500; }
+
+/*# sourceMappingURL=style.css.map */
