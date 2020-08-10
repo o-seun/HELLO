@@ -38,8 +38,6 @@ $font-size: 4rem;
 
 @mixin animation ($name, $iteration-count, $fill-mode, $timing-function) {
   animation-name: $name;
-  // animation-delay: $delay;
-  // animation-duration: $duration;
   animation-iteration-count: $iteration-count;
   animation-fill-mode: $fill-mode;
   animation-timing-function: $timing-function;
