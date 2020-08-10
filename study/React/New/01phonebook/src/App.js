@@ -8,12 +8,12 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <React.Fragment>
-        <PhoneBook
-          onCreate={this.handleCreate}
-        />
-      </React.Fragment>
+  return (
+    <React.Fragment>
+      <PhoneBook
+        onCreate={this.handleCreate}
+      />
+    </React.Fragment>
     );
   }
 }
