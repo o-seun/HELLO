@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Scss 기능정리</title>
+
+  <link rel="stylesheet" href="./scss/style.css" />
+</head>
+<body>
+
+  <section id="nesting">
+    <h4 class="center">중첩</h4>
+    <ul class="list">
+      <li>리스트01</li>
+      <li>리스트02</li>
+      <li>리스트03</li>
+    </ul>
+    <h4>중첩</h4>
+    <div>
+      <pre>
+        #nesting {
+          display: block;
+          width: 100%;
+          .list {
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li {
+              margin: 1rem;
+              font-size: 1.8rem;
+            }
+          }
+        }
+      </pre>
+    </div>
+  </section>
+
+  <section id="ampersand">
+    <h4 class="center">상위 선택자 참조</h4>
+    <ul class="list">
+      <li>리스트01</li>
+      <li>리스트02</li>
+      <li>리스트03</li>
+    </ul>
+    <h4>상위 선택자 참조</h4>
+    <div>
+      <pre>
+        #ampersand {
+          display: block;
+          width: 100%;
+          .list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover {
+              background: #000000;
+            }
+            li {
+              margin: 1rem;
+              font-size: 1.8rem;
+              &:hover {
+                color: #ffffff;
+              }
+            }
+          }
+        }
+      </pre>
+    </div>
+  </section>
+
+  <section id="at-root">
+    <h4 class="center">중첩 벗어나기</h4>
+    <ul class="list">
+      <li>리스트01</li>
+      <li>리스트02</li>
+      <li>리스트03</li>
+    </ul>
+    <h4>상위 선택자 참조</h4>
+    <div>
+      <pre class="color">
+        #at-root {
+          display: block;
+          width: 100%;
+          .list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li {
+              font-size: 1.8rem;
+              margin: 1rem;
+            }
+            @at-root .color {
+              color: #57bfcf;
+            }
+          }
+        }
+      </pre>
+    </div>
+  </section>
+
+  <section id="nesting-">
+    <h4 class="center">중첩된 속성</h4>
+    <ul class="list">
+      <li>리스트01</li>
+      <li>리스트02</li>
+      <li>리스트03</li>
+    </ul>
+    <h4>상위 선택자 참조</h4>
+    <div>
+      <pre>
+        #nesting- {
+          h4 {
+            color: #ffffff;
+            font: {
+              weight: bold;
+              size: 1.4rem;
+            }
+            background: {
+              color: #57bfcf;
+            }
+          }
+          display: block;
+          width: 100%;
+          .list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li {
+              font-size: 1.8rem;
+              margin: 1rem;
+            }
+          }
+        }
+      </pre>
+    </div>
+  </section>
+
+  <section id="variables">
+    <h4 class="center">변수</h4>
+    <ul class="list">
+      <li>리스트01</li>
+      <li>리스트02</li>
+      <li>리스트03</li>
+    </ul>
+    <h4>변수</h4>
+    <div>
+      <pre>
+        $fs-color: purple;
+
+        #variables {
+          h4 {
+            color: $fs-color;
+          }
+          .list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          pre {
+            color: $fs-color;
+          }
+        }
+      </pre>
+    </div>
+  </section>
+
+  <section id="calculate">
+    <h4 class="center">연산</h4>
+    <ul class="list">
+      <li>리스트01</li>
+      <li>리스트02</li>
+      <li>리스트03</li>
+    </ul>
+    <h4>연산</h4>
+    <div>
+      <pre>
+        #calculate {
+          .list {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            li {
+              font-size: 1.8rem;
+              margin: 1rem;
+            }
+          }
+          div {
+            background: yellow;
+            width: 50px + 50px;  // 더하기
+            height: 40px - 10px;  // 빼기
+            font-size: 10px * 2;  // 곱하기
+            margin: (30px / 2);  // 나누기
+          }
+        }
+      </pre>
+    </div>
+  </section>
+
+</body>
+</html>
