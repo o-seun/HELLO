@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>Vue.js - 인스턴스 생성 & Watch</h1>
+    <h5>Count : {{ test }}</h5>
+    <button v-on:click="test += 1">+</button>
+    <button v-on:click="test -= 1">-</button>
+  </div>
+
+  <script>
+    var data = { test: 0 };
+    var vm = new Vue({
+      el: '#app',
+      data: data,
+      created: function() {
+        // 초기 데이터 확인 :  0
+        console.log('test is: ' + this.test)
+      }
+    })
+    
+    // 같은 객체 참조 - 당연히 속성 변경은 원본 데이터에 영향.
+    console.log(vm.test === data.test)
+    console.log(vm.$data === data)
+
+    vm.$watch('test', function(newVal, oldVal) {
+      console.log('이전 데이터', oldVal)
+      console.log('변경 데이터', newVal)
+    })
+  </script>
+</body>
+</html>
